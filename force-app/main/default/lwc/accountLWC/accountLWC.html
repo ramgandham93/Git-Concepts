@@ -1,0 +1,28 @@
+<template>
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+            Create New Account.
+        </h2>
+
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" style="color:rgb(151, 10, 10)" label="Account Name" onchange={valueChanged} value={accountName}></lightning-input>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" style="color:rgb(26, 10, 151)" label="Description" onchange={valueChanged} value={description}></lightning-input>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" style="color:rgb(22, 79, 2)" label="Account Number" onchange={valueChanged} value={accountNumber}></lightning-input>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" style="color:rgb(83, 0, 70)" label="Site" onchange={valueChanged} value={site}></lightning-input>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" style="color:rgb(138, 5, 74)" label="Type" onchange={valueChanged} value={type}></lightning-input>
+        </div>
+
+        </div>
+
+
+    <!-- Brand variant: Identifies the primary action in a group of buttons -->
+    <lightning-button variant="success" label="Save" title="Save" onclick={handleOnSave} class="slds-m-left_x-small"></lightning-button>
+</template>

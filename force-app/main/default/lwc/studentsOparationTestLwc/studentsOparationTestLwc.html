@@ -1,0 +1,44 @@
+<template>
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+           Create a New Student
+        </h2>
+
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="First Name" onchange={valueChanged} value={firstname}></lightning-input>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Last Name" onchange={valueChanged} value={lastName}></lightning-input>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Gender" onchange={valueChanged} value={gender}></lightning-input>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="City" onchange={valueChanged} value={city}></lightning-input>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Father Name"  onchange={valueChanged} value={fatherName}></lightning-input>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Telugu Marks"  onchange={valueChanged} value={teluguMarks}></lightning-input>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Hindi Marks"  onchange={valueChanged} value={hindiMarks}></lightning-input>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Maths Marks"  onchange={valueChanged} value={mathsMarks}></lightning-input>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Socail Marks"  onchange={valueChanged} value={socialMarks}></lightning-input>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="English Marks"  onchange={valueChanged} value={englishMarks}></lightning-input>
+        </div>
+        
+    </div>
+
+ <!-- Brand variant: Identifies the primary action in a group of buttons -->
+    <lightning-button variant="brand" label="Save" title="Save" onclick={handleOnSave} class="slds-m-left_x-small"></lightning-button>
+
+
+</template>
